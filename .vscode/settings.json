@@ -4,6 +4,7 @@
     "source.fixAll.eslint": true
   },
   "vetur.format.enable": false,
+  "stylelint.validate": ["vue"], // Add "vue" language.
   "editor.tabSize": 2,
   "files.eol": "\n",
 }
