@@ -6,6 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "prepare": "husky install",
     "lint:eslint": "eslint \"src/**/*.{vue,js,jsx}\" --fix",
     "lint:stylelint": "stylelint \"src/**/*.{vue,css,less,scss}\" --fix"
   },
@@ -19,6 +20,8 @@
     "eslint-define-config": "^1.5.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "postcss-html": "^1.4.1",
     "postcss-less": "^6.0.0",
     "prettier": "^2.7.1",
@@ -30,5 +33,20 @@
     "stylelint-order": "^5.0.0",
     "vite": "^2.9.9",
     "vue-eslint-parser": "^9.0.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "stylelint --fix",
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
   }
 }
