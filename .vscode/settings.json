@@ -1,0 +1,9 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "vetur.format.enable": false,
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+}
