@@ -6,6 +6,8 @@ import { setupGuard } from './router/guard'
 
 import { store } from './store'
 
+import './styles/index.less'
+
 setupGuard(router)
 
 new Vue({

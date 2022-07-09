@@ -13,7 +13,7 @@ Vue2.7 已经发布正式版啦，不出意外的话这应该是 Vue2 的最后�
 - [x] husky + lint-staged （git commit 时自动格式化代码）
 - [x] Vue 全家桶集成
 - [x] Axios 封装及接口管理
-- [ ] 常用 Less 函数集成
+- [x] Css 样式处理
 - [ ] vite.config.js 基础配置
 - [ ] 跨域配置
 - [ ] 多环境变量配置

@@ -3,6 +3,10 @@
     home <button @click="routeChange">变化</button>
 
     <button @click="addNum">{{ num }} + 1</button>
+
+    <p style="width: 300px">
+      多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略多行省略
+    </p>
   </div>
 </template>
 
@@ -42,4 +46,13 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="less" scoped>
+p {
+  color: @primaryColor;
+  .multi-ellipsis(3);
+
+  :deep(span) {
+    font-size: 14px;
+  }
+}
+</style>
