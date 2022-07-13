@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 import routeModules from './modules'
 
+import { HOME_PATH } from './constants'
+
 Vue.use(VueRouter)
 
 /**
@@ -11,7 +13,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/home'
+    redirect: HOME_PATH
   },
   ...routeModules
 ]

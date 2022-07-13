@@ -5,8 +5,8 @@ export const useDemoStore = defineStore('demo', {
     count: 1
   }),
   actions: {
-    addCount(val) {
-      this.count += val
+    accumulate() {
+      this.count++
     }
   }
 })
