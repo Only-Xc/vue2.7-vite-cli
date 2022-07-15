@@ -21,6 +21,7 @@
     "@commitlint/config-conventional": "^17.0.3",
     "@vitejs/plugin-legacy": "^1.8.2",
     "@vitejs/plugin-vue2": "^1.1.2",
+    "autoprefixer": "^10.4.7",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-define-config": "^1.5.1",
@@ -41,6 +42,9 @@
     "vite": "^2.9.9",
     "vue-eslint-parser": "^9.0.3"
   },
+  "browserslist": [
+    "defaults"
+  ],
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
       "prettier --write",

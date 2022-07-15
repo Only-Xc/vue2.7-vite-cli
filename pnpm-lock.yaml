@@ -5,6 +5,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.0.3
   '@vitejs/plugin-legacy': ^1.8.2
   '@vitejs/plugin-vue2': ^1.1.2
+  autoprefixer: ^10.4.7
   axios: ^0.27.2
   eslint: ^8.18.0
   eslint-config-prettier: ^8.5.0
@@ -40,6 +41,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.0.3
   '@vitejs/plugin-legacy': 1.8.2_vite@2.9.13
   '@vitejs/plugin-vue2': 1.1.2_vite@2.9.13+vue@2.7.5
+  autoprefixer: 10.4.7
   eslint: 8.18.0
   eslint-config-prettier: 8.5.0_eslint@8.18.0
   eslint-define-config: 1.5.1
@@ -828,6 +830,21 @@ packages:
     resolution: {integrity: sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==}
     engines: {node: '>= 4.5.0'}
     hasBin: true
+    dev: true
+
+  /autoprefixer/10.4.7:
+    resolution: {integrity: sha512-ypHju4Y2Oav95SipEcCcI5J7CGPuvz8oat7sUtYj3ClK44bldfvtvcxK6IEK++7rqB7YchDGzweZIBG+SD0ZAA==}
+    engines: {node: ^10 || ^12 || >=14}
+    hasBin: true
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      browserslist: 4.21.1
+      caniuse-lite: 1.0.30001361
+      fraction.js: 4.2.0
+      normalize-range: 0.1.2
+      picocolors: 1.0.0
+      postcss-value-parser: 4.2.0
     dev: true
 
   /autoprefixer/9.8.8:
@@ -2139,6 +2156,10 @@ packages:
       combined-stream: 1.0.8
       mime-types: 2.1.35
     dev: false
+
+  /fraction.js/4.2.0:
+    resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
+    dev: true
 
   /fragment-cache/0.2.1:
     resolution: {integrity: sha512-GMBAbW9antB8iZRHLoGw0b3HANt57diZYFO/HL1JGIC1MjKrdmhxvrJbupnVvpys0zsz7yBApXdQyfepKly2kA==}
